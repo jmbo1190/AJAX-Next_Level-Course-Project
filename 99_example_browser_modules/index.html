@@ -1,0 +1,17 @@
+<head>
+
+</head>
+<body>
+    <h1>Modules In the Browser</h1>
+    <script type="module" src="./file1.js"></script> 
+    <!-- without type="module" the above line results in:
+        [Error] SyntaxError: Unexpected keyword 'export'
+	(anonymous function) (file1.js:7)
+    -->
+    <script type="module" src="./file2.js"></script>
+    <!--  without type="module" the above line results in:
+        [Error] SyntaxError: Unexpected token '{'. import call expects one or two arguments.
+        (anonymous function) (file2.js:1)
+    -->
+    </body>
+
